@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/milk.iml" filepath="$PROJECT_DIR$/.idea/modules/milk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/milk_main.iml" filepath="$PROJECT_DIR$/.idea/modules/milk_main.iml" group="milk" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/milk_test.iml" filepath="$PROJECT_DIR$/.idea/modules/milk_test.iml" group="milk" />
+    </modules>
+  </component>
+</project>

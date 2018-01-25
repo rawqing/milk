@@ -1,0 +1,31 @@
+group 'com.yq'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'com.android.support:support-annotations:25.3.1'
+    testCompile 'com.android.support.test:runner:0.5'
+    testCompile 'com.android.support.test:rules:0.5'
+    testCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    testCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
+    testCompile 'com.android.support.test.espresso:espresso-web:2.2.2'
+    testCompile('com.android.support.test.espresso:espresso-contrib:2.2') {
+        // Necessary to avoid version conflicts
+        // 经过实践,不如此将无法启动Junit4进行测试 ( 一直找不到测试方法 )
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'recyclerview-v7'
+    }
+    testCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    testCompile 'com.alibaba:fastjson:1.2.20'
+    testCompile 'org.jsoup:jsoup:1.10.3'
+    testCompile 'com.esotericsoftware.yamlbeans:yamlbeans:1.12'
+}
